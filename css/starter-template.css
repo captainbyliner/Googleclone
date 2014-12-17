@@ -1,0 +1,227 @@
+.funnel {
+margin-left:10em;
+margin-right:10em;
+}
+
+.chapterheading {
+font-size:10em;
+color:#3B3B3C;
+text-align:center;
+}
+
+blockquote {
+font-family: Georgia, serif;
+font-size: 3em;
+font-style: italic;
+width: 100%;
+padding: 0.25em 40px;
+margin-bottom:75px;
+line-height: 1.45;
+position: relative;
+color: #383838;
+}
+
+blockquote:before {
+display: block;
+content: open-quote;
+font-size: 80px;
+position: absolute;
+left: -20px;
+top: -20px;
+color:#383838;
+}
+
+.quoteslider {
+font-family: Georgia, serif;
+font-size:4em;
+font-style:italic;
+padding-top:1em;
+padding-bottom:1em;
+float:right;
+width:600px;
+height:400px;
+color:#383838;
+}
+
+
+
+.breakoutbox {
+width:100%;
+height:300px;
+background-color:red;
+}
+
+.text-left {
+text-align:left;
+}
+
+
+body {
+  padding-top: 50px;
+}
+
+.lead {
+text-align:center;
+font-size:2.5em;
+color:black;
+}
+
+.drop {
+float: left;
+color: #3B3B3C;
+font-size: 3em;
+line-height: 48px;
+padding-top: 8px;
+padding-right: 2px;
+}
+
+.nutgraph {
+font-size:2.5em;
+color:#3B3B3C;
+padding:75px 50px 50px 75px;
+}
+
+.nutgraphtext {
+font-size:1.5em;
+line-height:2em;
+color:#3B3B3C;
+padding-bottom:75px;
+}
+
+.margincall {
+text-decoration:overline;
+font-size:2em;
+margin-top:100px;
+
+}
+
+.margincall1 {
+font-size:2em;
+margin-top:100px;
+margin-bottom:100px;
+}
+
+.columnheadline {
+font-size:4em;
+color:blue;
+text-align:center;
+}
+
+.columnheadline:hover {
+color:black;
+}
+
+.columnlines {
+font-size:1.5em;
+line-height:2em;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+
+.container {
+width:950px;
+height:auto;
+max-width:100%;
+}
+
+
+.mainhead:hover {
+color:black;
+}
+
+.mainimage {
+max-width:100%;
+}
+
+
+.swapMe img {
+-webkit-transition:all 1s ease-in-out;
+-moz-transition:all 1s ease-in-out;
+-ms-transition:all 1s ease-in-out;
+-o-transition:all 1s ease-in-out;
+transition:all 1s ease-in-out;
+}
+
+.swap1,.swapMe:hover .swap2 {
+-webkit-opacity:1;
+-moz-opacity:1;
+opacity:1;
+}
+
+.swapMe:active .swap1,.swap2 {
+-webkit-opacity:0;
+-moz-opacity:0;
+opacity:0;
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+
+
+
+/*---make a basic box ---*/
+.box{
+width: 600px;
+height: 400px;
+position: relative;
+margin: 10px;
+padding: 20px;  
+float: left;
+border: 1px solid #333;
+font-size:22px;
+color:red;
+
+}
+
+.wrapper {
+margin-right:auto;
+margin-left:auto;
+position:relative;
+overflow:hidden;
+width:950px;
+height:570px;
+max-width:100%;
+}
+
+#slide {
+position:absolute;
+left:-650px;
+width:950px;
+height:570px;
+transition:1s;
+}
+
+.wrapper:hover #slide {
+transition:1s;
+left:0;
+}
+
+
+
